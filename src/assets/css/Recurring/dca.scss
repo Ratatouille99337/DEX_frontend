@@ -1,0 +1,76 @@
+.dollarCost {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 40px;
+  .text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .dca {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      .que {
+        font-size: 20px;
+      }
+      .con {
+        color: #8892a1;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+  .pay {
+    flex: 1;
+    .period {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .last {
+        flex: 1;
+        text-align: center;
+        font-size: 16px;
+      }
+      .after {
+        text-align: center;
+        flex: 1;
+        font-size: 16px;
+      }
+    }
+    .bill {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .costCard {
+        flex: 4;
+      }
+      p {
+        flex: 1;
+      }
+    }
+    .totalCost1 {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .value {
+        font-size: 16px;
+      }
+      .price {
+        font-size: 16px;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}

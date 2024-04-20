@@ -1,0 +1,145 @@
+.totalcurrency {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+
+  .imgName {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    background-color: inherit;
+
+    .img {
+      background-color: inherit;
+      width: 24px;
+      height: 24px;
+
+      img {
+        width: 100%;
+        background-color: inherit;
+      }
+    }
+
+    .currencyName {
+      background-color: inherit;
+      margin: 0;
+      min-width: 0;
+      margin-right: 4px;
+      margin-left: 8px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .currencyTotalName {
+      background-color: inherit;
+
+      margin-right: 4px;
+      margin-left: 8px;
+      font-size: 12px;
+      margin-top: 2px;
+      color: #848e9c;
+    }
+  }
+
+  .dollar {
+    background-color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    flex: 1;
+
+    &:hover {
+      color: #848e9c;
+    }
+  }
+
+  .percent {
+    background-color: inherit;
+
+    font-size: 14px;
+    flex: 1;
+    color: #0ecb81;
+  }
+
+  .Bdollar {
+    background-color: inherit;
+    font-size: 14px;
+    flex: 1;
+  }
+
+  .market {
+    background-color: inherit;
+    font-size: 14px;
+    flex: 1;
+  }
+
+  .actionicon3 {
+    font-size: 16px;
+    line-height: 24px;
+    background-color: inherit;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    img {
+      width: 100%;
+      background-color: inherit;
+    }
+  }
+
+  .actionicon2 {
+    font-size: 16px;
+    line-height: 24px;
+    background-color: inherit;
+    width: 20px;
+    height: 20px;
+
+    img {
+      width: 100%;
+      background-color: inherit;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .currencyTotalName {
+      display: none;
+    }
+    .imgName > .currencyName {
+      font-size: 12px;
+    }
+    .imgName {
+      flex: 1;
+    }
+
+    .imgName > .img {
+      width: 20px;
+    }
+
+    .dollar {
+      display: none;
+    }
+    .percent {
+      font-size: 12px;
+    }
+    .Bdollar {
+      font-size: 12px;
+    }
+    .market {
+      font-size: 12px;
+    }
+    .dollar {
+      width: 18px;
+    }
+    .dollar {
+      width: 18px;
+    }
+  }
+}

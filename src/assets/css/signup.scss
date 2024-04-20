@@ -1,0 +1,25 @@
+.sign-up {
+  height: 64px;
+  padding: 20px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .sign-modal {
+    transition: 0.2s all ease-in-out;
+    background-color: var(--stand-color);
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.modalView {
+  position: absolute;
+}

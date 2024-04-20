@@ -1,0 +1,132 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  button {
+    background-color: transparent;
+    &:hover {
+      color: #f0b90b;
+    }
+  }
+  .dropdown-menu {
+    position: absolute;
+
+    width: 210px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--faq-no-border-color);
+    margin-left: -90px;
+
+    .logheader {
+      padding: 15px;
+      margin-top: 10px;
+      font-size: 20px;
+      background-color: inherit;
+    }
+    .subsymbol {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      background-color: inherit;
+      justify-content: center;
+
+      .unverified {
+        display: flex;
+        padding-left: 3px;
+        padding-right: 3px;
+        background-color: #f0b90b;
+        border-radius: 3px;
+        flex-direction: row;
+        align-items: center;
+
+        .img {
+          background-color: transparent;
+
+          svg {
+            path {
+              color: var(--faq-no-border-color);
+            }
+          }
+        }
+        p {
+          background-color: #f0b90b;
+          font-size: 12px;
+          color: var(--faq-no-border-color);
+        }
+      }
+      .regular {
+        display: flex;
+        background-color: var(--faq-item-background-hover-color);
+        width: fit-content;
+        border-radius: 3px;
+        gap: 5px;
+        padding: 2px 1px;
+        .img {
+          background-color: var(--faq-item-background-hover-color);
+          width: 13px;
+          svg {
+            path {
+              color: #f0b90b;
+            }
+          }
+        }
+        p {
+          background-color: var(--faq-item-background-hover-color);
+          font-size: 12px;
+        }
+      }
+    }
+    .twitterpart {
+      padding: 15px;
+      background-color: inherit;
+      .twitter {
+        margin-top: 15px;
+        display: flex;
+        background-color: var(--faq-item-background-hover-color);
+        width: fit-content;
+        border-radius: 3px;
+        gap: 5px;
+        padding: 2px 1px;
+        .img {
+          background-color: var(--faq-item-background-hover-color);
+          width: 13px;
+          img {
+            background-color: var(--faq-item-background-hover-color);
+            width: 100%;
+          }
+        }
+        p {
+          background-color: var(--faq-item-background-hover-color);
+          font-size: 12px;
+        }
+      }
+    }
+    .drop-content {
+      background-color: transparent;
+      cursor: pointer;
+      background-color: inherit;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      padding: 10px 15px;
+      .img {
+        background-color: inherit;
+        width: 20px;
+        img {
+          background-color: inherit;
+          width: 100%;
+        }
+      }
+      p {
+        background-color: inherit;
+      }
+      &:hover {
+        background-color: var(--faq-item-background-hover-color);
+      }
+    }
+  }
+}

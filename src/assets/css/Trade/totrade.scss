@@ -1,0 +1,402 @@
+.totlist {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  //border: 1px solid #8892a1;
+  height: fit-content;
+  .firstList {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    // border-right: 1px solid #8892a1;
+    .tradenav {
+      height: 50px;
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      //  border:1px solid #8892a1;
+      //  border-bottom:0px;
+      gap: 20px;
+
+      .tradenavTitle {
+        font-size: 25px;
+        margin: auto;
+        margin-left: 10px;
+      }
+      .tradenavSubTitle {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .eachSubTitle {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          p {
+            font-size: 12px;
+            color: #8892a1;
+          }
+        }
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+    .tradegraph {
+      //   border-top:1px solid #8892a1;
+      display: flex;
+      flex-direction: row;
+
+      .realtimelist {
+        //  border:1px solid #8892a1;
+        padding: 15px;
+        flex: 2;
+        //border-right: 1px solid #8892a1;
+        display: flex;
+        flex-direction: column;
+        .flist {
+          flex: 1;
+          .symbol {
+            border: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .eachsymbol {
+              display: flex;
+              flex-direction: row;
+              gap: 10px;
+              svg {
+                width: 25px;
+              }
+            }
+            select {
+            }
+          }
+          .pricetitle {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 10px;
+            .pfirst {
+              flex: 1;
+              font-size: 12px;
+              color: #8892a1;
+            }
+            .psecond {
+              display: flex;
+              justify-content: flex-end;
+              flex: 1;
+              font-size: 12px;
+              color: #8892a1;
+            }
+            .pthird {
+              color: #8892a1;
+              display: flex;
+              justify-content: flex-end;
+              flex: 1;
+              font-size: 12px;
+            }
+          }
+          .totallist {
+            margin-top: 10px;
+          }
+        }
+        .slist {
+          flex: 1;
+          .pricetitle1 {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 10px;
+            .pfirst {
+              flex: 1;
+              font-size: 12px;
+              color: #8892a1;
+            }
+            .psecond {
+              display: flex;
+              justify-content: flex-end;
+              flex: 1;
+              font-size: 12px;
+              color: #8892a1;
+            }
+            .pthird {
+              color: #8892a1;
+              display: flex;
+              justify-content: flex-end;
+              flex: 1;
+              font-size: 12px;
+            }
+          }
+          .totallist1 {
+            margin-top: 10px;
+          }
+          .progressbar {
+            margin-top: 10px;
+          }
+        }
+        @media only screen and (max-width: 768px) {
+          gap: 40px;
+          flex-direction: row;
+        }
+        @media only screen and (max-width: 500px) {
+          gap: 20px;
+          flex-direction: column;
+        }
+      }
+      .klinegraph {
+        // border-bottom: 1px solid #8892a1;
+        //  border-left: 1px solid #8892a1;
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        //  border:1px solid #8892a1;
+        height: inherit;
+        .topgraphnav {
+          padding: 5px 15px;
+          //   border: 1px solid #8892a1;
+          //    border-top:0px;
+          height: 35px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .toprighttext {
+            //border:1px solid #8892a1;
+            display: flex;
+            flex-direction: row;
+            font-size: 14px;
+            gap: 20px;
+            color: #8892a1;
+            p {
+              color: #8892a1;
+              font-size: 14px;
+              cursor: pointer;
+            }
+          }
+          .toplefttext {
+            display: flex;
+            flex-direction: row;
+            font-size: 14px;
+            color: #8892a1;
+            gap: 20px;
+            svg {
+              width: 16px;
+              color: #8892a1;
+              cursor: pointer;
+            }
+          }
+        }
+        .timegraphnav {
+          //   border: 1px solid #8892a1;
+          padding: 5px 15px;
+          //   border-top:0px;
+          //  border:1px solid #8892a1;
+          height: 35px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .subrighttext {
+            display: flex;
+            flex-direction: row;
+
+            gap: 20px;
+
+            p {
+              cursor: pointer;
+              color: #8892a1;
+              font-size: 12px;
+            }
+          }
+          .sublefttext {
+            gap: 20px;
+            display: flex;
+            flex-direction: row;
+            font-size: 14px;
+            color: #8892a1;
+            p {
+              cursor: pointer;
+              color: #8892a1;
+              font-size: 12px;
+            }
+            @media only screen and (max-width: 500px) {
+              display: none;
+            }
+          }
+        }
+        .realgraph1 {
+          // border-left:1px solid #8892a1;
+          // border-right:1px solid #8892a1;
+          padding: 20px;
+        }
+        .selectgraph {
+          display: flex;
+        }
+      }
+    }
+  }
+  .secondList {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+
+    padding: 15px;
+    width: 100%;
+    .fcol {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      .sesearch {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .sesymbol {
+        border: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 15px;
+
+        p {
+          flex: 1;
+          color: #8892a1;
+          font-size: 12px;
+        }
+
+        .eachsymbol {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          svg {
+            width: 25px;
+          }
+        }
+        select {
+        }
+      }
+      .thtitle {
+        margin-top: 20px;
+        color: rgb(240, 185, 11);
+        font-size: 20px;
+      }
+      .sepricetitle {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 10px;
+        .pfirst {
+          flex: 1;
+          font-size: 12px;
+          color: #8892a1;
+        }
+        .psecond {
+          display: flex;
+          justify-content: flex-end;
+          flex: 1;
+          font-size: 12px;
+          color: #8892a1;
+        }
+        .pthird {
+          color: #8892a1;
+          display: flex;
+          justify-content: flex-end;
+          flex: 1;
+          font-size: 12px;
+        }
+      }
+      .setotallist {
+        margin-top: 10px;
+      }
+    }
+    .scol {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      .scol_first {
+        display: flex;
+        flex-direction: column;
+        .thtitle {
+          margin-top: 20px;
+          color: rgb(240, 185, 11);
+          font-size: 20px;
+        }
+        .ssepricetitle {
+          cursor: pointer;
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          margin-top: 10px;
+          .pfirst {
+            flex: 1;
+            font-size: 12px;
+            color: #8892a1;
+          }
+          .psecond {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+            font-size: 12px;
+            color: #8892a1;
+          }
+          .pthird {
+            color: #8892a1;
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+            font-size: 12px;
+          }
+        }
+        .ssetotallist {
+          margin-top: 10px;
+        }
+      }
+      .scol_second {
+        display: flex;
+        flex-direction: column;
+        .fthtitle {
+          margin-top: 20px;
+          color: rgb(240, 185, 11);
+          font-size: 20px;
+        }
+        .ffipricetitle {
+          cursor: pointer;
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          margin-top: 10px;
+          gap: 5px;
+          p {
+            font-size: 12px;
+            color: #8892a1;
+          }
+        }
+        .fsetotallist {
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+    .secondList {
+      gap: 40px;
+      flex-direction: row;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .secondList {
+      gap: 20px;
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .firstList > .tradegraph {
+      gap: 40px;
+      flex-direction: column-reverse;
+    }
+  }
+}

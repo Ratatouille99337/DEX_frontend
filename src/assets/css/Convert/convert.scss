@@ -1,0 +1,177 @@
+.convert {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  .conheader {
+    p {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+    }
+  }
+  .concontent {
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 40px;
+
+    .top {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      border-radius: 10px;
+      border: 1px solid var(--faq-no-border-color);
+      padding: 30px;
+      gap: 5px;
+
+      &:hover {
+        border-color: var(--color);
+      }
+      .topleft {
+        flex: 2;
+        p {
+          font-size: 20px;
+          line-height:30px;
+        }
+      }
+      .topimg {
+        flex: 1;
+        width: 15px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .marketbut {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      .eachbut {
+        p {
+          padding: 5px 10px;
+          background-color: var(--faq-no-border-color);
+          border-radius: 3px;
+        }
+      }
+    }
+    .wallet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .leftwa {
+        display: flex;
+        flex-direction: row;
+        flex-direction: center;
+        align-items: center;
+        p {
+          font-size: 14px;
+          color: #8892a1;
+        }
+      }
+      .rightcheck {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        .eachcheck {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .convcard {
+      background-color: var(--faq-no-border-color);
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .leftconcard {
+        background-color: inherit;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .toptex {
+          background-color: inherit;
+          p {
+            background-color: inherit;
+            font-size: 12px;
+            color: #8892a1;
+          }
+        }
+        .bottex {
+          background-color: inherit;
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          p {
+            background-color: inherit;
+          }
+        }
+      }
+      .rightconcard {
+        display: flex;
+        flex-direction: column;
+        background-color: inherit;
+        gap: 20px;
+        p {
+          background-color: inherit;
+        }
+        .corner {
+          background-color: inherit;
+
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          background-color: var(--faq-item-background-hover-color);
+          border-radius: 5px;
+          padding: 5px 10px;
+          .img {
+            background-color: inherit;
+
+            width: 20px;
+            img {
+              background-color: inherit;
+
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .convbutton {
+      width: 100%;
+    }
+    .zero {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 20px;
+      .eachzero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        .img {
+          width: 40px;
+        }
+        p {
+        }
+      }
+    }
+  }
+}

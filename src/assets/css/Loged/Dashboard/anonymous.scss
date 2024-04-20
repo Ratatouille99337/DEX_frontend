@@ -1,0 +1,46 @@
+.dash {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  .left {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    
+    .leftimg {
+      width: 80px;
+      img {
+        width: 100%;
+      }
+    }
+    .leftpart {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap:20px;
+      p {
+        font-size: 18px;
+      }
+      .icon {
+        display: flex;
+        gap:10px;
+      }
+    }
+  }
+  .right {
+    flex:2;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    .each {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+    }
+    @media only screen and (max-width: 1030px) {
+      display:none;
+    }
+  }
+
+}

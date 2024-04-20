@@ -1,0 +1,54 @@
+.estimate {
+  border: 1px solid #8892a1;
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+
+  .balance {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .left {
+      display: flex;
+     
+      gap: 10px;
+      justify-content: start;
+      align-items: center;
+      p {
+        font-size: 20px;
+      }
+      svg {
+        width: 20px;
+        color: #8892a1;
+      }
+    }
+    .right {
+  
+      display: flex;
+      gap: 10px;
+      p {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #8892a1;
+      }
+    }
+    @media only screen and (max-width: 660px) {
+      gap: 30px;
+      flex-direction: column;
+    }
+  }
+  .passsel {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    p {
+      font-size: 30px;
+    }
+    select {
+    }
+  }
+}

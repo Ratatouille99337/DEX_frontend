@@ -1,0 +1,67 @@
+.totalCost{
+  width:100%;
+  margin-top:10px;
+  background-color: inherit;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap:10px;
+  background-color: var(--faq-no-border-color);
+    .totalCostName{
+      background-color: inherit;
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+
+      .totalCostGroup{
+        background-color: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap:10px;
+        .totalCostimg{
+          background-color: inherit;
+          width:10px;
+          
+          img{
+            background-color: inherit;
+            width: 100%;
+          }
+        }
+
+        .currencyName{
+          background-color: inherit;
+        }
+
+      }
+      
+      .dollar{
+        background-color: inherit;
+        p{
+          font-size: 14px;
+          background-color: inherit;
+        }
+      }
+    }
+
+    .totalCostName1{
+      background-color: inherit;
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      p{
+        text-align: left;
+        background-color: inherit;
+      }
+      .value{
+        background-color: inherit;
+        p{
+         
+          background-color: inherit;
+        }
+      }
+    }
+  
+ 
+}

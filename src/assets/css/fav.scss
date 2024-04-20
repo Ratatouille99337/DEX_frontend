@@ -1,0 +1,247 @@
+.fav {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  width:100%;
+  .first {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 20px;
+    width:100%;
+    .subfirst {
+      
+      display: flex;
+      gap: 20px;
+      flex-direction: row;
+
+      a {
+        font-size: 18px;
+        color: #848E9C;
+        background-color: transparent;
+
+        &:hover {
+          color: var(--color);
+        }
+      }
+    }
+  }
+
+  .second {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    gap: 20px;
+
+    .subsecond {
+   
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+     
+      a {
+        font-size: 14px;
+        color: #848E9C;
+
+        &:hover {
+          color: var(--color);
+          border: 1px solid #2B3139;
+          background-color: #2B3139;
+          border-radius: 3px;
+          transition-duration: 0.4s;
+        }
+      }
+    }
+  }
+
+  .third {
+    background-color: inherit;
+    border: 1px solid #2b3139;
+    border-radius: 15px;
+    padding: 15px;
+
+    .explain {
+     
+      .explainTitle {
+        font-size: 20px;
+        color: #EAECEF;
+        line-height: 28px;
+      }
+
+      .explainContent {
+        font-size: 14px;
+        color: #848E9C;
+      }
+
+      .explainMore {
+        font-size: 12px;
+        color: #EAECEF;
+      }
+    }
+  }
+
+  .firthMenu {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 15px;
+    width: 100%;
+
+    .totalcurrencyMenu {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      
+      cursor: pointer;
+      background-color: transparent;
+
+      .imgNameMenu {
+
+        display: flex;
+        flex-direction: row;
+        flex: 2;
+        background-color: inherit;
+        font-size: 12px;
+        @media only screen and (max-width: 768px) {    
+          flex:1;
+        }
+      }
+
+
+      .dollarMenu {
+        background-color: inherit;
+        font-size: 12px;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        select {
+          width: 60px;
+          margin-right: 10px;
+          display: flex;
+          padding-left: 2px;
+          padding-right: 3px;
+          color: #848E9C;
+          border: 1px solid #848E9C;
+          border-radius: 4px;
+          
+        }
+        @media only screen and (max-width: 768px) {
+            display: none;
+     
+         }
+      }
+
+      .percentMenu {
+        background-color: inherit;
+
+        font-size: 12px;
+        flex: 1;
+        color: #0ECB81;
+      }
+
+      .BdollarMenu {
+        background-color: inherit;
+        font-size: 12px;
+        flex: 1;
+
+
+      }
+
+      .marketMenu {
+        background-color: inherit;
+        font-size: 12px;
+
+        flex: 1;
+
+      }
+
+      .actioniconMenu {
+        background-color: inherit;
+        font-size: 12px;
+       
+
+      }
+
+    }
+
+  }
+
+  .firth {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .fifth {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+    gap: 15px;
+    width: 100%;
+
+    .pagination {
+      a {
+        margin-left: 5px;
+        color: #848E9C;
+        float: left;
+        padding: 6px 12px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border-radius: 5px;
+
+        .active {
+          background-color: #2b3139;
+
+        }
+
+        &:hover {
+          background-color: #2b3139;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .first>.subfirst{
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-around;
+    }
+    .second>.subsecond{
+      margin-top: 20px;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+  }
+
+  @media only screen and (max-width: 768px) {
+    .first>.subfirst{
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-around;
+    }
+    .second>.subsecond{
+      margin-top: 20px;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+  }
+}

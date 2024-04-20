@@ -1,0 +1,64 @@
+.ApiVip {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width:100%;
+  background-color: var(--faq-item-background-hover-color);
+  .img {
+    flex: 1;
+    background-color: inherit;
+    img{
+      background-color: inherit;
+    }
+  }
+  .vipcon {
+    background-color: inherit;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .viptitle {
+      background-color: inherit;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      p {
+        background-color: inherit;
+        font-size: 20px;
+      }
+    }
+    .vipcon {
+      p{
+        background-color: inherit;
+      }
+    }
+    .vipbot {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: inherit;
+      .eachbot {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: inherit;
+        gap: 10px;
+        p{
+          background-color: inherit;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 876px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

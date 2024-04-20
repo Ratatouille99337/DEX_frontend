@@ -1,0 +1,12 @@
+.eachChange{
+  display: flex;
+  font-display: column;
+  justify-content: space-between;
+  margin-top:20px;
+    .btcChange{
+      font-size: 16px;
+    }
+    .usdChange{
+      font-size: 16px;
+    }
+}

@@ -1,0 +1,80 @@
+.coinseq {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  gap: 20px;
+
+  .subCoinGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+
+    .eachCoin {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      border: 1px solid #2b3139;
+      border-radius: 15px;
+      flex-direction: column;
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+
+
+      .coinHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+
+        .hotCoin {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+        }
+
+        .more {
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          padding-right: 13px;
+        }
+      }
+
+      .coinRank {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media only screen and (max-width: 500px) {}
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+      flex-direction: column;
+
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    flex-direction: column;
+
+  }
+}

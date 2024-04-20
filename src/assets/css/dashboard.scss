@@ -1,0 +1,29 @@
+.dashboard {
+  // min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  .part {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+    width: 100%;
+    .leftpart {
+      flex: 1;
+    }
+    .rightpart {
+      flex: 4;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}

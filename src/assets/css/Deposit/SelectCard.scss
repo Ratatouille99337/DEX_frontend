@@ -1,0 +1,45 @@
+.guideCard {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  gap: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  .guideimg {
+    background-color: inherit;
+    width: 30px;
+    img {
+      background-color: inherit;
+      width: 100%;
+    }
+  }
+  .guideCon {
+    display: flex;
+    font-display: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 3px;
+    gap: 10px;
+    background-color: inherit;
+    .guidetitle {
+      background-color: inherit;
+      p {
+        font-size: 16px;
+        background-color: inherit;
+      }
+    }
+    .guidetext {
+      background-color: inherit;
+      font-size: 14px;
+
+      p {
+        background-color: inherit;
+        color: #8892a1;
+      }
+    }
+  }
+  &:hover {
+    background-color: var(--faq-no-border-color);
+  }
+}

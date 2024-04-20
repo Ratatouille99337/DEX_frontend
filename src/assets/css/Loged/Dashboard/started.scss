@@ -1,0 +1,74 @@
+.started {
+  display: flex;
+  flex-direction: column;
+  .startHr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--faq-no-border-color);
+  }
+  .pending {
+    display: flex;
+    gap: 20px;
+    .card1 {
+      border: 1px solid #8892a1;
+      border-radius: 10px;
+      background-color: transparent;
+      flex: 1;
+      display: flex;
+      padding: 20px;
+
+      .cardtext {
+        flex: 3;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: inherit;
+        p {
+          font-size: 20px;
+          line-height: 30px;
+          background-color: inherit;
+        }
+      }
+      .img {
+        flex: 2;
+        background-color: inherit;
+        width: 200px;
+        img {
+          width: 100%;
+          background-color: inherit;
+        }
+      }
+    }
+    .card23 {
+      flex: 1;
+      display: flex;
+      gap: 20px;
+      .card2 {
+        border: 1px solid #8892a1;
+        border-radius: 10px;
+        background-color: transparent;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        p {
+          font-size: 20px;
+        }
+        .icontitle {
+          display: flex;
+          gap: 10px;
+          flex: 1;
+        }
+        .icontitle1 {
+          flex: 1;
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1030px) {
+      flex-direction: column;
+    }
+  }
+}

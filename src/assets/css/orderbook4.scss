@@ -1,0 +1,53 @@
+.scroll4{
+  height: 100px;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+
+
+.price {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .first {
+    flex: 1;
+    font-size: 12px;
+    color: #f6465d;
+    display: flex;
+
+    svg {
+      width: 15px;
+    }
+    .mark {
+      box-sizing: border-box;
+      padding-left: 4px;
+      padding-right: 4px;
+      height: 14px;
+      font-size: 12px;
+      line-height: 14px;
+      border-radius: 2px;
+      margin-left: 4px;
+      font-weight: 400;
+      color: rgb(240, 185, 11);
+      cursor: inherit;
+      background-color: rgb(60, 38, 1);
+    }
+  }
+  .second {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    font-size: 12px;
+  }
+  .third {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    font-size: 12px;
+    svg {
+      width: 25px;
+    }
+  }
+}
+}

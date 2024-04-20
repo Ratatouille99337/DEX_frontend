@@ -1,0 +1,23 @@
+.scroll-container {
+  width: 80%; /* Set a fixed width for the container */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Ensure contents stay on a single line */
+}
+
+.scroll-content {
+  width: fit-content; /* Set a width larger than the container to enable horizontal scrolling */
+  background-color: inherit; /* Background color of the content */
+  padding: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Change the background color of the track */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #888; /* Change the color of the thumb */
+}

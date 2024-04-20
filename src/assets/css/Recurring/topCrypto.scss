@@ -1,0 +1,34 @@
+.card2{
+  padding:10px;
+  gap:20px;
+  width: 100%;
+  margin-top:10px;
+   .cardarea2{
+    display: grid;
+    padding:10px;
+    gap:20px;
+    grid-template-columns:auto auto auto auto auto auto;
+    padding:20px;
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: auto auto;
+    }
+  }
+  .hr{
+    width: 100%;
+    height: 1px;
+    background-color: var(--faq-no-border-color);
+  }
+  .toGmp{
+    display: grid;
+    padding:10px;
+    gap:20px;
+    grid-template-columns:auto auto auto auto auto;
+    padding:20px;
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: auto auto auto;
+    }
+
+  }
+}

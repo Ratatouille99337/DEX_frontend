@@ -1,0 +1,59 @@
+.Botsheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .leftbotstitle {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .number {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      .leftbum {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .rightbum {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .but{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+  .rightbots {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--faq-no-border-color);
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    .righttext {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .leftimg {
+      flex: 1;
+      width: 30px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

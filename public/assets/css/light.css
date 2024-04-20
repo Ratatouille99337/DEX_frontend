@@ -1,0 +1,13 @@
+:root {
+  --background-color: #fff;
+  --background-sub-color: #fafafa;
+  --background-modal-color: #eaecef;
+  --color: #1e2329;
+  --stand-color: #f0b90b;
+  --stand-hover-color: #c99400;
+  --anti-color: #fff;
+  --faq-no-border-color: rgb(234, 236, 239);
+  --faq-item-background-hover-color: rgb(250, 250, 250);
+  --background-modal-line-color: #1e2329;
+  
+}

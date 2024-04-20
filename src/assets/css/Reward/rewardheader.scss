@@ -1,0 +1,80 @@
+.rewheader {
+  display: flex;
+  flex-direction: column;
+  background-image: url("rewards.svg");
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Important for positioning the title */
+  width: 100%;
+  height: 400px;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Center vertically */
+  @media only screen and (max-width: 992px) {
+    background-image: none;
+  }
+  .titlecen {
+    margin-left: 40px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    .title {
+      background-color: transparent;
+      p {
+        background-color: transparent;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 64px;
+        max-width: 792px;
+        @media only screen and (max-width: 1030px) {
+          font-size: 20px;
+        }
+      }
+    }
+    .subtitle {
+      background-color: transparent;
+      p {
+        background-color: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #8892a1;
+      }
+    }
+    .points {
+      background-color: transparent;
+      display: flex;
+      flex-direction: row;
+      gap: 65px;
+      .num {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background-color: transparent;
+        p {
+          background-color: transparent;
+          color: #f0b90b;
+        }
+      }
+      .poin {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        p {
+          background-color: transparent;
+          color: #f0b90b;
+        }
+      }
+    }
+    .shop {
+      background-color: transparent;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      p {
+        background-color: transparent;
+      }
+    }
+  }
+}

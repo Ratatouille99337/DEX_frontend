@@ -1,0 +1,284 @@
+.adver-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+
+  .ad-view {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .trust-section {
+      display: flex;
+      flex-direction: column;
+
+      .trust {
+        display: flex;
+        flex-direction: column;
+
+        .trust-num {
+          min-width: 0;
+          color: #f0b90b;
+          margin-bottom: 24px;
+          font-size: 84px;
+          line-height: 88px;
+
+          @media only screen and (max-width: 768px) {
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: 600;
+
+          }
+
+          .desc {
+            font-size: inherit;
+            line-height: inherit;
+
+            div {
+              font-size: inherit;
+              line-height: inherit;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      .sign-section {
+        display: flex;
+        flex-direction: column;
+
+        .sign-up {
+          display: flex;
+          flex-direction: row;
+
+
+
+        }
+
+        .sign-text {
+          display: flex;
+          margin-top: 10px;
+          flex-direction: row;
+
+          img {
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    .other-section {
+      display: flex;
+      flex-direction: row;
+      margin-top: 120px;
+      width: 100%;
+
+      .other-login {
+        color: #848e9c;
+        display: flex;
+        flex-direction: column;
+
+        .icon {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+
+          img {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #2b3139;
+            border-radius: 10px;
+            padding: 12px;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .download {
+        color: #848e9c;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+
+        svg {
+          margin-top: 20px;
+          width: 48px;
+          height: 48px;
+          padding: 10px;
+          border: 1px solid #2b3139;
+          border-radius: 10px;
+          cursor: pointer;
+
+          &:hover {
+            border-color: var(--stand-color);
+          }
+
+          path {
+            color: #f0b90b;
+          }
+        }
+      }
+    }
+  }
+
+  .trading-view {
+    flex: 1;
+    width: 50%;
+    //flex: 1;
+    margin-left: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .totalCurrency {
+      padding: 24px;
+      background-color: var(--background-sub-color);
+      border-radius: 20px;
+      width: 100%;
+      order:2;
+
+      .detail {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        cursor: pointer;
+        margin-left: 8px;
+        margin-top: 8px;
+        background-color: transparent;
+
+        &:hover {
+          color: #a4afc0
+        }
+      }
+    }
+
+    .explain {
+      order:3;
+      margin-top: 17px;
+      padding: 24px;
+      background-color: var(--background-sub-color);
+      border-radius: 20px;
+      width: 100%;
+
+      .each {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 24px;
+        word-wrap: break-word;
+        background-color: inherit;
+        
+        cursor: pointer;
+
+        &:hover {
+          color: #848E9C;
+        }
+      }
+
+      .detail {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+       
+        cursor: pointer;
+        margin-left: 8px;
+        margin-top: 8px;
+        background-color: inherit;
+
+        &:hover {
+          color: #a4afc0
+        }
+      }
+    }
+
+    .countDown {
+      order:4;
+      margin-top: 17px;
+      padding: 24px;
+      background-color: var(--background-sub-color);
+      border-radius: 20px;
+      width: 100%;
+
+      .each {
+        margin-bottom: 40px;
+        font-size: 14px;
+        line-height: 22px;
+        background-color: inherit;
+        
+      }
+
+    }
+
+  }
+
+  @media only screen and (max-width: 1030px) {
+    flex-direction: column;
+
+    .ad-view {
+      width: 100%;
+    }
+
+    .trading-view {
+      width: 100%;
+      margin-left: 0px;
+      margin-top: 30px;
+    }
+    .sign-text>img{
+      display:none;
+    }
+    .ad-view>.other-section{
+      margin-top:30px;
+    }
+    .trading-view>.countDown{
+      order:1;
+      margin-bottom: 15px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .ad-view {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .ad-view>.other-section{
+      display: none;
+    }
+
+    input {
+      display: none;
+    }
+
+    .btn {
+      display: flex;
+      margin: auto;
+
+    }
+    .trading-view>.totalCurrency{
+      background-color: inherit;
+    }
+    .trading-view>.explain{
+      background-color: inherit;
+    }
+    .trading-view>.countDown{
+      background-color: inherit;
+    }
+    .explain>.detail{
+      margin:auto;
+    }
+  }
+}

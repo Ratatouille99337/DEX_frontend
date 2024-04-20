@@ -1,0 +1,103 @@
+.calc {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  .calctitle {
+    font-size: 25px;
+  }
+  .interest {
+    maring-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    p {
+      color: #848e9c;
+      font-size: 20px;
+    }
+    .p1 {
+      color: #848e9c;
+      font-size: 20px;
+    }
+  }
+  .offer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .leftoffer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .leftoffertitle {
+        p {
+          font-size: 20px;
+        }
+      }
+      .leftborder {
+        margin-top: 15px;
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        border: 1px solid #848e9c;
+        padding: 10px;
+        border-radius: 5px;
+        .lefttoptext {
+          gap: 10px;
+          display: flex;
+          flex-direction: row;
+          .p1 {
+            font-size: 11px;
+            color: #f0b90b;
+            background-color: #5c4432;
+            padding: 2px;
+            border-radius: 2px;
+          }
+        }
+      }
+      .leftbut {
+      }
+    }
+    .rightoffer {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .rightoffertitle {
+        font-size: 20px;
+      }
+      .rightofferpro {
+        font-size: 22px;
+        color: rgb(31, 141, 249);
+      }
+      .rightoffertick {
+        display: flex;
+        flex-direction: row;
+        .firsthalf {
+          display: flex;
+          flex-direction: row;
+          flex: 1;
+          justify-content: flex-start;
+          align-items: center;
+          p {
+            color: #848e9c;
+          }
+        }
+      }
+      .rightoffergraph {
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .interest>.p1 {
+      display: none;
+    }
+    .offer{
+      flex-direction: column;
+      gap:30px;
+    }
+  }
+}

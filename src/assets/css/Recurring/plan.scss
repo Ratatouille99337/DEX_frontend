@@ -1,0 +1,103 @@
+.plan {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 20px;
+  .createPlan {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+
+    .createRecurringPlan {
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+      .text {
+        font-size: 20px;
+      }
+      .button {
+        cursor: pointer;
+        border: 1px, #8892e3;
+      }
+    }
+    .selectAssets {
+      margin-top: 20px;
+      p {
+        font-size: 16px;
+      }
+    }
+    .selectAssetsCon {
+      margin-top: 10px;
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .usd {
+        flex: 6;
+      }
+      p {
+        flex: 1;
+        font-size: 16px;
+        text-align: center;
+      }
+      .btc {
+        flex: 6;
+      }
+    }
+    .input {
+      margin-top: 5px;
+    }
+    .select {
+      margin-top: 10px;
+
+
+      
+      min-width: 100%;
+      select {
+        width: 100%;
+        border: 1px solid #2b3139;
+        border-radius: 10px;
+        padding: 16px;
+      }
+      &:hover {
+        border-color: var(--stand-color);
+        opacity: 0.9;
+      }
+    }
+    .receive {
+      margin-top: 50px;
+      p {
+        font-size: 12px;
+      }
+    }
+    .button {
+      margin-top: 10px;
+    }
+  }
+  .top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .topCryptos {
+      p {
+        font-size: 20px;
+      }
+    }
+    .settingTime {
+      gap: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      p {
+        font-size: 12px;
+      }
+    }
+    .coinRank {
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}

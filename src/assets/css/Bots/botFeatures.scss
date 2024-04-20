@@ -1,0 +1,27 @@
+.botfeatures{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  margin-top: 30px;
+  .botfcard{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    .eachfcard{
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      justify-content: center;
+      align-items: center;
+      .img{
+        width:80px;
+        img{
+          width:100%;
+        }
+      }
+    }
+  
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}}

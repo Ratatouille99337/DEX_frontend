@@ -1,0 +1,41 @@
+.conversion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30px;
+  width: 100%;
+  .conTitle {
+    margin-top: 30px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .conSubTitle {
+    margin-top: 30px;
+    color: #8892a1;
+    font-size: 16px;
+  }
+  .conCoin {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    gap: 20px;
+    .conEach {
+      border: 1px solid var(--faq-no-border-color);
+      border-radius: 20px;
+      padding: 20px;
+      flex: 1;
+    }
+    @media only screen and (max-width: 992px) {
+      grid-template-columns: auto auto;
+    }
+    @media only screen and (max-width: 650px) {
+      grid-template-columns: auto;
+    }
+  }
+  .conBottomTitle {
+    margin-top: 10px;
+    color: #8892a1;
+    font-size: 14px;
+  }
+}

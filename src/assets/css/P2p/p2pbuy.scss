@@ -1,0 +1,27 @@
+.p2pbuy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  .buysell {
+    border: 1px solid #8892a1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 5px 15px;
+    p {
+      cursor:pointer;
+      text-align: center;
+    }
+  }
+  .ind {
+    display: flex;
+    gap: 20px;
+    P {
+      cursor: pointer;
+      color: #8892a1;
+    }
+  }
+}

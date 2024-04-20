@@ -1,0 +1,38 @@
+.eachCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .cardText {
+    .cardHeader {
+      font-size: 20px;
+    }
+    .cardCon {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #8892a1;
+    }
+  }
+  .cardRank {
+    display: flex;
+    flex-direction: row;
+    .imggroup {
+      flex: 1;
+      width: 40px;
+      height: 40px;
+      img {
+        width: 100%;
+      }
+    }
+    .img {
+      flex: 1;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      img {
+        width: 100%;
+        background-color: inherit;
+        margin-left:-10px;
+      }
+    }
+  }
+}

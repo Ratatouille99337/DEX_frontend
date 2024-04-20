@@ -1,0 +1,51 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .headerord {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    p {
+      font-size: 16px;
+
+      &:hover {
+        color: #8892a1;
+      }
+    }
+  }
+  .selects {
+    gap:20px;
+    display: flex;
+    flex-direction: row;
+    select {
+      padding: 10px;
+      border: 1px #8892a1 solid;
+      border-radius: 5px;
+    }
+  }
+
+  
+  .table {
+    overflow-x: auto;
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+      height: 300px;
+      tr {
+        th {
+          height:20px;
+          border-bottom:1px solid #8892a1;
+          text-align: left;
+          padding: 8px;
+        }
+        td {
+          text-align: left;
+          padding: 8px;
+        }
+      }
+    }
+  }
+}

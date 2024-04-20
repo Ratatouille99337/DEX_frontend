@@ -1,0 +1,46 @@
+.squareitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding:10px;
+  cursor: pointer;
+  .left {
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    gap: 10px;
+    .img {
+      background-color: inherit;
+      width: 50px;
+
+      img {
+        background-color: inherit;
+        border-radius: 30%;
+        width: 100%;
+      }
+    }
+
+    .right {
+      background-color: inherit;
+      display: flex;
+      gap:5px;
+      flex-direction: column;
+      p {
+        background-color: inherit;
+      }
+    }
+  }
+
+  .button {
+    p {
+      background-color: #8892a1;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+  &:hover {
+    background-color: var(--faq-no-border-color);
+  }
+}

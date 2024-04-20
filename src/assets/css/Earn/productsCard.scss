@@ -1,0 +1,46 @@
+.productCard {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+  .productImgTitle {
+    background-color: transparent;
+    gap: 15px;
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    .productImg {
+      background-color: inherit;
+      width: 20px;
+      img {
+        width: 100%;
+        background-color: inherit;
+      }
+    }
+    .productTitle {
+      background-color: inherit;
+    }
+  }
+  .productPro {
+    background-color: inherit;
+    flex: 3;
+    color: #1f8df9;
+  }
+  .productDur {
+    background-color: inherit;
+    flex: 3;
+  }
+  .productSym {
+    background-color: inherit;
+    flex: 1;
+  
+    svg {
+      width: 20px;
+    }
+  }
+  &:hover {
+    background-color: var(--faq-no-border-color);
+  }
+  cursor: pointer;
+  border-radius: 5px;
+}

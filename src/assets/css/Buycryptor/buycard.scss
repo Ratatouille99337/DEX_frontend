@@ -1,0 +1,32 @@
+.buycard {
+  border: 1px solid var(--faq-no-border-color);
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: transparent;
+  flex: 1;
+  padding: 20px;
+  .buycardlogo {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    img {
+      background-color: inherit;
+      width: 100%;
+    }
+  }
+  .buycardtitle {
+    background-color: inherit;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .buycontent {
+    background-color: inherit;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
