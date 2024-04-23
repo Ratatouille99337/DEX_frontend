@@ -8,22 +8,22 @@ const TotalCoin = ({ totalCoin, key }) => {
     <div className="totalcurrency" key={key}>
       <div className="imgName">
         <div className="img">
-          <img src={totalCoin.img} />
+          {/* <img src={totalCoin.logo} /> */}
         </div>
-        <div className="currencyName">{totalCoin.currencyName}</div>
-        <div className="currencyTotalName">{totalCoin.currencyTotalName}</div>
+        <div className="currencyName">{totalCoin.symbol}</div>
+        <div className="currencyTotalName">{totalCoin.name}</div>
       </div>
-      <div className="dollar">{totalCoin.dollar}</div>
-      {totalCoin.percent.indexOf("-") >= 0 ? (
+      <div className="dollar">{totalCoin.quote.USD.price}</div>
+      {/* {totalCoin.quote.USD.percent_change_24h.indexOf("-") >= 0 ? (
         <div className="percent" style={{ color: "#F6465D" }}>
-          {totalCoin.percent}
+          {totalCoin.quote.USD.percent_change_24h}
         </div>
-      ) : (
-        <div className="percent">{totalCoin.percent}</div>
-      )}
+      ) : ( */}
+        <div className="percent">{totalCoin.quote.USD.percent_change_24h}</div>
+      {/* )} */}
 
-      <div className="Bdollar">{totalCoin.Bdollar}</div>
-      <div className="market">{totalCoin.market}</div>
+      <div className="Bdollar">{totalCoin.quote.USD.volume_24h}</div>
+      <div className="market">{totalCoin.quote.USD.market_cap_dominance}</div>
       <div className="actionicon3">
         <svg
           class="bn-svg h-5 w-5"
