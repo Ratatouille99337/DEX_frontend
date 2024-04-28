@@ -49,9 +49,9 @@ const Fav = () => {
       axios
         .get(devApiLink + "/market/coins", {})
         .then((response) => {
-          //console.log(response.data.data);
+          //  response.data.data.sort((a, b) => a.quote.USD.price - b.quote.USD.price);
           setCoinData(response.data.data);
-          // console.log(coinData);
+          //console.log(response.data.data);
         })
         .catch((error) => {
           console.log(error);
@@ -129,7 +129,7 @@ const Fav = () => {
             return <TotalCoin key={coinData._id} totalCoin={item} />;
           })}
         </div>
-        <div className="fifth">
+        {/* <div className="fifth">
           <div class="pagination">
             <a href="#">&laquo;</a>
             <a class="active" href="#">
@@ -142,7 +142,7 @@ const Fav = () => {
             <a href="#">6</a>
             <a href="#">&raquo;</a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

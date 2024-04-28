@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, Redirect } from "react-router-dom";
 import "../../../assets/css/Deposit/select.scss";
 import Button from "../../Buttons/Button";
@@ -17,56 +17,41 @@ import aud from "../../../assets/image/aud.png";
 import inr from "../../../assets/image/inr.png";
 import Signin from "../../Login/signin";
 import SelectCard from "../../Currencies/SelectCard";
+import axios from "axios";
+import { devApiLink } from "../../../config";
 
-const GuideData = [
-  {
-    guidelogo:  usd ,
-    guidetitle: "USD",
-    guidetext: "USD",
-  },
-  {
-    guidelogo:  eur ,
-    guidetitle: "EUR",
-    guidetext: "Euro",
-  },
-  {
-    guidelogo:  brl ,
-    guidetitle: "BRL",
-    guidetext: "Brazilian Real",
-  },
-  {
-    guidelogo:  try1 ,
-    guidetitle: "TRY",
-    guidetext: "Turkish Lira",
-  },
-  {
-    guidelogo:  sar ,
-    guidetitle: "SAR",
-    guidetext: "Saudi Riyal",
-  },
-  {
-    guidelogo:  vnd ,
-    guidetitle: "VND",
-    guidetext: "Vietnamese Dong",
-  },
-  {
-    guidelogo:  rub ,
-    guidetitle: "RUB",
-    guidetext: "Rubul",
-  },
-  {
-    guidelogo:  aud ,
-    guidetitle: "AUD",
-    guidetext: "Australian Dollar",
-  },
-  {
-    guidelogo:  inr ,
-    guidetitle: "INR",
-    guidetext: "Indian Rupi",
-  },
-];
+  
+  
 const Select = () => {
+
+  const [GuideData, setGuideData] = useState([]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      axios
+        .get(devApiLink + "/market/coins", {})
+        .then((response) => {
+          //  response.data.data.sort((a, b) => a.quote.USD.price - b.quote.USD.price);
+          setGuideData(response.data.data);
+          //console.log(response.data.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, []);
+  
   const [modalFlag2, setModalFlag2] = useState(false);
+
+  const selectCoin = (item) => {
+    console.log(item.guidetext);
+
+    document.getElementById("coinlogo").src = `https://s2.coinmarketcap.com/static/img/coins/64x64/${item.id}.png`
+    document.getElementById("buttontitle").innerHTML = item.symbol;
+    document.getElementById("buttonsubtitle").innerHTML = item.name;
+    setModalFlag2(!modalFlag2);
+  };
   return (
     <div className="container">
       <div className="select">
@@ -74,10 +59,14 @@ const Select = () => {
         <div className="label">Currency</div>
         <div className="currencySel" onClick={() => setModalFlag2(!modalFlag2)}>
           <div className="img">
-            <img src={usd} />
+            <img id="coinlogo" src={usd} />
           </div>
-          <div className="buttontitle">USD</div>
-          <div className="buttonsubtitle">USD</div>
+          <div id="buttontitle" className="buttontitle">
+            USD
+          </div>
+          <div id="buttonsubtitle" className="buttonsubtitle">
+            USD
+          </div>
         </div>
         <div className="label">Deposit with</div>
         <div className="currencyButton">Recommended</div>
@@ -100,17 +89,17 @@ const Select = () => {
           </div>
         </div>
         <div className="button">
-        <Signin
-                style={{
-                  width: "100%",
-                  cursor: "pointer",
-                  padding: "15px 20px",
-                  backgroundColor: "#f0b90b",
-                  textAlign: "center",
-                  borderRadius: "10px",
-                }}
-                text="Sign in"
-              />
+          <Signin
+            style={{
+              width: "100%",
+              cursor: "pointer",
+              padding: "15px 20px",
+              backgroundColor: "#f0b90b",
+              textAlign: "center",
+              borderRadius: "10px",
+            }}
+            text="Sign in"
+          />
         </div>
       </div>
 
@@ -139,14 +128,13 @@ const Select = () => {
                   </div>
 
                   <div class="contain">
-                    
                     {GuideData.map((item, key) => {
                       return (
-                        <div  onClick={() => setModalFlag2(!modalFlag2)}>
-                        <SelectCard 
-                          key={key} guideItem={item} />
+                        <div onClick={() => selectCoin(item)}>
+                          {/* <div  onClick={() => setModalFlag2(!modalFlag2)}> */}
+                          <SelectCard key={key} guideItem={item} />
                         </div>
-                        );
+                      );
                     })}
                   </div>
                 </div>

@@ -8,14 +8,17 @@ const SelectCard = ({ guideItem }) => {
   return (
     <div className="guideCard">
       <div className="guideimg">
-        <img src={guideItem?.guidelogo} />
+        <img
+          src={`https://s2.coinmarketcap.com/static/img/coins/64x64/${guideItem?.id}.png`}
+          alt="Coin"
+        />
       </div>
       <div className="guideCon">
         <div className="guidetitle">
-          <p>{guideItem?.guidetitle}</p>
+          <p>{guideItem?.symbol}</p>
         </div>
         <div className="guidetext">
-          <p>{guideItem?.guidetext}</p>
+          <p>{guideItem?.name}</p>
         </div>
       </div>
     </div>

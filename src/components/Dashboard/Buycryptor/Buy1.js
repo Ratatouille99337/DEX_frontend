@@ -37,33 +37,31 @@ import bome from "../../../assets/image/bome.png";
 import aevo from "../../../assets/image/aevo.png";
 import ocean from "../../../assets/image/ocean.png";
 import req from "../../../assets/image/req.png";
-import adash from "../../../assets/image/adash.png";
 import Togglebar from "../Bar/Togglebar";
-import Togglebar_buy from "../Bar/Togglebar_buy";
 import Togglebar_buy1 from "../Bar/Togglebar_buy1";
 
 const Nav = () => {
   const coinDatas = [
     {
-      coinlogo: bnb,
+      coinlogo: 1,
       currencyName: "BNB",
-      dollar: "$579.30",
-      percent: "-2.19%",
+      dollar: "579.30",
+      percent: "-2.19",
     },
-    { coinlogo: stx, currencyName: "STX", dollar: "$532.12", percent: "4.1%" },
+    { coinlogo: 1027, currencyName: "STX", dollar: "532.12", percent: "4.1" },
     {
-      coinlogo: ethfi,
+      coinlogo: 825,
       currencyName: "ETHFI",
-      dollar: "$353.90",
-      percent: "-2.9%",
+      dollar: "353.90",
+      percent: "-2.9",
     },
     {
-      coinlogo: uni,
+      coinlogo: 1839,
       currencyName: "UNI",
-      dollar: "$239.43",
-      percent: "-1.49%",
+      dollar: "239.43",
+      percent: "-1.49",
     },
-    { coinlogo: req, currencyName: "REQ", dollar: "$79.12", percent: "13.19%" },
+    { coinlogo: 5426, currencyName: "REQ", dollar: "79.12", percent: "13.19" },
   ];
   return (
     <div className="container">
@@ -72,9 +70,6 @@ const Nav = () => {
           <div className="text">Buy Crypto</div>
           <div className="hotlist">
             <Coincard title="Hot Cryptos" coinDatas={coinDatas} />
-          </div>
-          <div style={{ width: "100%" }}>
-            <img src={adash} style={{ width: "100%" }} />
           </div>
         </div>
         <div className="sell">

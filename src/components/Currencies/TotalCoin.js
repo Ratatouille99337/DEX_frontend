@@ -4,26 +4,30 @@ import React from "react";
 import "../../assets/css/totalCoin.scss";
 
 const TotalCoin = ({ totalCoin, key }) => {
+  
   return (
     <div className="totalcurrency" key={key}>
       <div className="imgName">
         <div className="img">
-          {/* <img src={totalCoin.logo} /> */}
+          <img
+            src={`https://s2.coinmarketcap.com/static/img/coins/64x64/${totalCoin.id}.png`}
+            alt="Coin"
+          />
         </div>
         <div className="currencyName">{totalCoin.symbol}</div>
         <div className="currencyTotalName">{totalCoin.name}</div>
       </div>
-      <div className="dollar">{totalCoin.quote.USD.price}</div>
-      {/* {totalCoin.quote.USD.percent_change_24h.indexOf("-") >= 0 ? (
+      <div className="dollar">${totalCoin.quote.USD.price.toFixed(2)}</div>
+      {totalCoin.quote.USD.percent_change_24h <= 0 ? (
         <div className="percent" style={{ color: "#F6465D" }}>
-          {totalCoin.quote.USD.percent_change_24h}
+          {totalCoin.quote.USD.percent_change_24h.toFixed(2)}%
         </div>
-      ) : ( */}
-        <div className="percent">{totalCoin.quote.USD.percent_change_24h}</div>
-      {/* )} */}
+      ) : (
+      <div className="percent">{totalCoin.quote.USD.percent_change_24h.toFixed(2)}%</div>
+      )}
 
-      <div className="Bdollar">{totalCoin.quote.USD.volume_24h}</div>
-      <div className="market">{totalCoin.quote.USD.market_cap_dominance}</div>
+      <div className="Bdollar">${(totalCoin.quote.USD.volume_24h/1000000000).toFixed(2)}B</div>
+      <div className="market">${(totalCoin.quote.USD.market_cap/1000000000).toFixed(2)}B</div>
       <div className="actionicon3">
         <svg
           class="bn-svg h-5 w-5"

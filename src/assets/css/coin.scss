@@ -1,68 +1,67 @@
-.currency{ 
+.currency1 {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
-  width:100%;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 0;
   padding-right: 0;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
   background-color: transparent;
-  .imgName{
-      width:45%;
-      display: flex;
-      flex-direction: row;
+  .imgName {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    .img {
       background-color: inherit;
-      .img{
-          background-color: inherit;
-          width:24px;
-          height:24px;
-  
-          img{
-              width:100%;
-              background-color: inherit;
-          }
-      }
-  
-      .currencyName{
-          background-color: inherit;
-          margin: 0;
-          min-width: 0;
-          margin-right: 4px;
-          margin-left: 8px;
-         
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 24px;
-          
-          &:hover{
-              color: #848E9C; 
-          }
-      }
-  }
-  
+      width: 24px;
+      height: 24px;
 
-  .dollar{
-      background-color: inherit;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 24px;
-      width: 25%;
-      text-align: right;
-      
-      &:hover{
-          color: #848E9C; 
+      img {
+        width: 100%;
+        background-color: inherit;
       }
-  }
-  .percent{
+    }
+
+    .currencyName {
       background-color: inherit;
+      margin: 0;
+      min-width: 0;
+      margin-right: 4px;
+      margin-left: 8px;
+
       font-weight: 500;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 24px;
-      width: 25%;
-      text-align: right;
-      color: #0ECB81;
+
+      &:hover {
+        color: #848e9c;
+      }
+    }
+  }
+
+  .dollar {
+    background-color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    width: 25%;
+    text-align: right;
+
+    &:hover {
+      color: #848e9c;
+    }
+  }
+  .percent {
+    background-color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    width: 25%;
+    text-align: right;
+    color: #0ecb81;
   }
 }

@@ -43,25 +43,25 @@ import Togglebar_buy from "../Bar/Togglebar_buy";
 const Nav = () => {
   const coinDatas = [
     {
-      coinlogo: bnb,
+      coinlogo: 1,
       currencyName: "BNB",
-      dollar: "$579.30",
-      percent: "-2.19%",
+      dollar: "579.30",
+      percent: "-2.19",
     },
-    { coinlogo: stx, currencyName: "STX", dollar: "$532.12", percent: "4.1%" },
+    { coinlogo: 1027, currencyName: "STX", dollar: "532.12", percent: "4.1" },
     {
-      coinlogo: ethfi,
+      coinlogo: 825,
       currencyName: "ETHFI",
-      dollar: "$353.90",
-      percent: "-2.9%",
+      dollar: "353.90",
+      percent: "-2.9",
     },
     {
-      coinlogo: uni,
+      coinlogo: 1839,
       currencyName: "UNI",
-      dollar: "$239.43",
-      percent: "-1.49%",
+      dollar: "239.43",
+      percent: "-1.49",
     },
-    { coinlogo: req, currencyName: "REQ", dollar: "$79.12", percent: "13.19%" },
+    { coinlogo: 5426, currencyName: "REQ", dollar: "79.12", percent: "13.19" },
   ];
   return (
     <div className="container">
